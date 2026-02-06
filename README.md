@@ -57,7 +57,7 @@ The project helps in:
   - One **Customer** → Many **Transactions**  
   - One **Merchant** → Many **Transactions**  
 
-> ![ER Diagram](/diagrams/er_diagram_image.png)  
+> ![ER Diagram](/img/mobile_money_er_diagram.png)  
 
 ---
 
