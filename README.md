@@ -103,9 +103,36 @@ Before ranking, we aggregate per customer
 This query ranks customers based on their total transaction value. ROW_NUMBER assigns a unique position, RANK and DENSE_RANK handle ties differently, while PERCENT_RANK shows each customer’s relative position within the entire population. This helps identify high-value customers for loyalty programs.
 ![ER Diagram](/img/Apply_Ranking_Functions.png)
 ## STEP 4.2: Aggregate Window Functions
-(SUM() OVER(), AVG() OVER(), MIN() OVER(), MAX() OVER())
+SUM() OVER(), AVG() OVER(), MIN() OVER(), MAX() OVER()
+
 These functions let us analyze trends over time without collapsing rows.
 ## STEP 4.2.1: Running Total of Transactions
 This query calculates a running total of transaction amounts over time. It helps management understand transaction growth patterns and monitor overall system performance as transactions occur.
 Running Total using SUM() OVER()
 ![ER Diagram](/img/SUM_OVER.png)
+## STEP 4.2.2: Moving Average (3-Transaction Window)
+Moving Average using AVG() OVER()
+This query computes a three-transaction moving average of transaction amounts. It helps identify trends by reducing the effect of sudden spikes or drops in transaction values.
+![ER Diagram](/img/AVG_OVER.png)
+## STEP 4.2.3: MIN and MAX Over All Transactions
+This query identifies the smallest and largest transaction amounts in the system while retaining individual transaction records. It helps assess transaction limits and detect unusually high or low values.
+![ER Diagram](/img/MIN_MAX.png)
+## STEP 4.3: Navigation Window Functions
+(LAG() and LEAD())
+These functions let us compare a row with the previous or next row.
+They are perfect for growth analysis.
+## STEP 4.3.1: Compare Each Transaction with the Previous One (LAG)
+This query compares each transaction with the previous one to identify increases or decreases in transaction value. It helps the business monitor short-term transaction fluctuations and detect unusual changes.
+![ER Diagram](/img/LAG.png)
+## STEP 4.3.2: Compare Each Transaction with the Next One (LEAD)
+This query compares each transaction with the next transaction in time.
+It helps anticipate future transaction behavior and supports trend analysis.
+![ER Diagram](/img/LEAD.png)
+## STEP 4.4: Distribution Window Functions
+Functions used: NTILE(4), CUME_DIST()
+## 4.4.1 Customer Quartile Segmentation (NTILE)
+Divides customers into four groups based on transaction value, enabling targeted marketing and customer prioritization.
+![ER Diagram](/img/NTILE.png)
+## 4.4.2 Cumulative Distribution (CUME_DIST)
+Shows the relative standing of each customer within the entire population.
+![ER Diagram](/img/CUME_DIST.png)
