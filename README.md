@@ -136,3 +136,49 @@ Divides customers into four groups based on transaction value, enabling targeted
 ## 4.4.2 Cumulative Distribution (CUME_DIST)
 Shows the relative standing of each customer within the entire population.
 ![ER Diagram](/img/CUME_DIST.png)
+
+## References
+
+Oracle Corporation. (2023). *Oracle Database SQL Language Reference*.  
+https://docs.oracle.com/en/database/
+
+Oracle Corporation. (2023). *SQL for Analytics and Window Functions*.  
+https://docs.oracle.com/en/database/oracle/oracle-database/
+
+Elmasri, R., & Navathe, S. (2016). *Fundamentals of Database Systems* (7th ed.). Pearson.
+
+W3Schools. (2024). *SQL Window Functions Tutorial*.  
+https://www.w3schools.com/sql/sql_window_functions.asp
+
+IBM Documentation. (2023). *Database Design Principles*.  
+https://www.ibm.com/docs/
+
+GeeksforGeeks. (2024). *SQL Window Functions*.  
+https://www.geeksforgeeks.org/sql-window-functions/
+
+GeeksforGeeks. (2024). *SQL Joins*.  
+https://www.geeksforgeeks.org/sql-join-set-1-inner-left-right-and-full-joins/
+
+W3Schools. (2024). *SQL Window Functions*.  
+https://www.w3schools.com/sql/sql_window_functions.asp
+
+W3Schools. (2024). *SQL JOIN*.  
+https://www.w3schools.com/sql/sql_join.asp
+
+## Integrity Statement
+
+> “All sources were properly cited. Implementations and analysis represent original work. No AI generated content was copied without attribution or adaptation.”
+
+---
+
+## Conclusion
+
+The Mobile Money Transactions System demonstrates practical application of:
+
+- Relational database design
+- Constraint enforcement
+- SQL JOIN operations
+- Analytical window functions
+- Business intelligence extraction
+
+The system provides a structured and scalable foundation for financial transaction analysis in mobile money environments.
