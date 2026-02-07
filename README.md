@@ -100,4 +100,12 @@ Rank customers by total transaction amount
 Before ranking, we aggregate per customer
 ![ER Diagram](/img/Prepare_the_Data.png)
 ## STEP 4.1.2: Apply Ranking Functions
+This query ranks customers based on their total transaction value. ROW_NUMBER assigns a unique position, RANK and DENSE_RANK handle ties differently, while PERCENT_RANK shows each customer’s relative position within the entire population. This helps identify high-value customers for loyalty programs.
 ![ER Diagram](/img/Apply_Ranking_Functions.png)
+## STEP 4.2: Aggregate Window Functions
+(SUM() OVER(), AVG() OVER(), MIN() OVER(), MAX() OVER())
+These functions let us analyze trends over time without collapsing rows.
+## STEP 4.2.1: Running Total of Transactions
+This query calculates a running total of transaction amounts over time. It helps management understand transaction growth patterns and monitor overall system performance as transactions occur.
+Running Total using SUM() OVER()
+![ER Diagram](/img/SUM_OVER.png)
