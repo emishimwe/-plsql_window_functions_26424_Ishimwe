@@ -93,4 +93,9 @@ This query identifies customers regardless of whether they have performed any tr
  ![ER Diagram](/img/self_join.png)
 
  ### PART B: WINDOW FUNCTIONS (PL/SQL / Oracle SQL)
- 
+ ## STEP 4.1: Ranking Window Functions
+(ROW_NUMBER, RANK, DENSE_RANK, PERCENT_RANK)
+Rank customers by total transaction amount
+## STEP 4.1.1: Prepare the Data (Total per Customer)
+Before ranking, we aggregate per customer
+![ER Diagram](/img/Prepare_the_Data.png)
