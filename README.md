@@ -99,3 +99,5 @@ Rank customers by total transaction amount
 ## STEP 4.1.1: Prepare the Data (Total per Customer)
 Before ranking, we aggregate per customer
 ![ER Diagram](/img/Prepare_the_Data.png)
+## STEP 4.1.2: Apply Ranking Functions
+![ER Diagram](/img/Apply_Ranking_Functions.png)
